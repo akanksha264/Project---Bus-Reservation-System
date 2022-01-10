@@ -2,6 +2,7 @@
 #include <iomanip>		//for formatting of outputs
 #include <stdlib.h>
 #include <string.h>
+#include <conio.h>
 using namespace std;
 
 int p=0;	//To keep a count of buses
@@ -74,8 +75,6 @@ void Bus :: empty()
 
 void Bus :: bus_list()
 {
-	int x;	//To hald screen until next input
-	
 	//Clear screen for output
 	system ("cls");
 	
@@ -111,8 +110,8 @@ void Bus :: bus_list()
 	cout << "\t\t\t\t------------------------------------------------------------------------------------------------------------------------------" << endl;
 	cout << endl << endl << endl;
 	
-	cout << "\t\t\tEnter a digit to continue : ";
-	cin >> x;
+	cout << "\t\t\tPress Enter to continue : ";
+	getch();
 }
 
 void Bus :: seating()
@@ -167,9 +166,8 @@ void Bus :: seating()
 	cout << "------------------------------------------------------------------------------------------" << endl ;
 	
 	//To hold the screen
-	int x;
-	cout << "\t\t\tEnter a digit to continue : ";
-	cin >> x;
+	cout << "\t\t\tPress Enter to continue : ";
+	getch();
 }
 
 void Bus :: booking()
@@ -211,9 +209,8 @@ void Bus :: booking()
 		cout << endl << endl << "\t\t\t\tSORRY! Bus Already full!!" << endl << endl;
 		
 		//To hold the screen
-		int x;
-		cout << "\t\t\t\tEnter a digit to continue : ";
-		cin >> x;
+		cout << "\t\t\tPress Enter to continue : ";
+		getch();
 		return;
 	}
 	
@@ -239,9 +236,8 @@ void Bus :: booking()
 		cout << endl << "\t\t\t\t---------------------------------------------------" ;
 		
 		//To hold the screen
-		int x;
-		cout << endl << "\t\t\t\tEnter a digit to continue : ";
-		cin >> x;
+		cout << "\t\t\tPress Enter to continue : ";
+		getch();
 		return;
 		
 	}
@@ -324,9 +320,8 @@ void Bus :: cancel()
 		cout << endl << "\t\t\t\t---------------------------------------------------" ;
 		
 		//To hold the screen
-		int x;
-		cout << endl << "\t\t\t\tEnter a digit to continue : ";
-		cin >> x;
+		cout << "\t\t\tPress Enter to continue : ";
+		getch();
 		return;
 		
 	}
