@@ -1,5 +1,5 @@
 # Project---Bus-Reservation-System
-/*
+
 Simple bus reservation system project in C++ without file handling.
 It can perform following operations :- 
 1. Add a bus
